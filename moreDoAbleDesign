@@ -1,0 +1,11 @@
+Minting Coin based on block difficulty
+    if block difficulty > 10 mint 0.1 of currency to sender
+    if block difficulty <= 10 do not mint currency to sender
+Minting Coin based on transaction value and Bytes of the message data
+    Coin minted to sender per transaction = value of message / 1000 + 0.0001 per Byte of the message data
+    if value of message < 0.1 charge only 0.0001 per Byte of the message data
+Reward increase/ decrease with block difficulty
+    if block difficulty > 10
+        95% of total gas on block serves as reward & 5% of total gas goes to creator of currency
+    if block difficulty < 5
+        85% of total gas on block serves as reward & 15% of total gas goes to creator of currency
